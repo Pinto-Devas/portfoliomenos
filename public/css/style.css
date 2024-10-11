@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

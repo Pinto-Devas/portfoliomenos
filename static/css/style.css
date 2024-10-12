@@ -59,3 +59,8 @@ footer {
     margin-left: 0;
   }
 }
+
+.logo {
+  height: 50px; /* Ajuste para a altura que desejar */
+  width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+}

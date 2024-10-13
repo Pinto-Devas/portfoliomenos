@@ -1,11 +1,15 @@
 <header>
-  <img class="logo" src="{{ relURL "images/fotoperfil.png" }}" alt="Logo"> 
-  <h1>{{ .Site.Title}}</h1>
+  <div class="logo">
+    <a href="/">
+      <img src="{{ relURL "images/logo.svg" }}" alt="Logo do site" class="logo-img">
+    </a>
+  </div>
   <nav>
-      <ul>
-          <li><a href="{{ relURL "" }}">Home</a></li>
-          <li><a href="{{ relURL "about" }}">Sobre</a></li>
-          <li><a href="{{ relURL "tutorials" }}">Tutoriais</a></li>
-      </ul>
+    <ul class="nav-links">
+      <li><a href="{{ relURL "/" }}">Home</a></li>
+      <li><a href="{{ relURL "projects/" }}">Projetos</a></li>
+      <li><a href="{{ relURL "about/" }}">Sobre Mim</a></li>
+      <li><a href="{{ relURL "contact/" }}">Contato</a></li>
+    </ul>
   </nav>
 </header>

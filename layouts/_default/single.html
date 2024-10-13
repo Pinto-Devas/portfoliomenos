@@ -1,4 +1,10 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
+<main>
+  <section class="project">
+    <h1 class="project-title">{{ .Title }}</h1>
+    <div class="project-content">
+      <p>{{ .Content }}</p>
+    </div>
+  </section>
+</main>
 {{ end }}

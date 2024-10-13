@@ -1,66 +1,221 @@
+/* Cores */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #FFEEBC;
-  color: #005187;
+  background-color: #f7f7f5;
+  color: #000000;
+}
+
+h1, h2, h3, p {
+  color: #000000;
+}
+
+/* Estilo dos Botões */
+.btn-primary {
+  background-color: #000000;
+  color: #f7f7f5;
+}
+
+.btn-secondary {
+  background-color: #f7f7f5;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* Estilo da Introdução */
+.intro {
+  display: flex;
+  align-items: flex-start; /* Alinha ao topo */
+  justify-content: space-between;
+  padding: 20px 40px; /* Ajuste conforme necessário */
+}
+
+/* Estilo da Imagem de Perfil */
+.profile-picture {
+  position: relative; /* Necessário para o pseudo-elemento de degradê */
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 450px; /* Largura fixa */
+  height: 600px; /* Altura fixa */
+  border-radius: 20px; /* Bordas arredondadas */
+  object-fit: cover; /* Preenche o contêiner sem distorcer */
+  object-position: top; /* Alinha ao topo da imagem */
+  display: block;
+}
+
+/* Pseudo-elemento para o degradê */
+.profile-picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Coincide com as bordas da imagem */
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 247, 245, 0) 0%, /* Transparente no topo */
+    rgba(247, 247, 245, 1) 100% /* Degradê para a cor de fundo */
+  ),
+  linear-gradient(
+    to left,
+    rgba(247, 247, 245, 1) 0%, /* Degradê para a esquerda */
+    rgba(247, 247, 245, 0) 10%
+  ),
+  linear-gradient(
+    to right,
+    rgba(247, 247, 245, 1) 0%, /* Degradê para a direita */
+    rgba(247, 247, 245, 0) 10%
+  );
+  pointer-events: none; /* Permite clicar nos elementos abaixo */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura ajusta automaticamente para manter a proporção */
+    max-height: 300px; /* Limita a altura máxima em telas menores */
+  }
+
+  .profile-picture::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(247, 247, 245, 0) 0%,
+      rgba(247, 247, 245, 1) 100%
+    ),
+    linear-gradient(
+      to left,
+      rgba(247, 247, 245, 1) 0%,
+      rgba(247, 247, 245, 0) 10%
+    ),
+    linear-gradient(
+      to right,
+      rgba(247, 247, 245, 1) 0%,
+      rgba(247, 247, 245, 0) 10%
+    );
+  }
+
+  .intro {
+    flex-direction: column; /* Muda a disposição para coluna em telas pequenas */
+    text-align: center;
+  }
+}
+
+/* Estilo do Título e Subtítulo */
+.main-title {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 56px; /* Aumente o tamanho da fonte */
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-header {
-  background-color: #005187;
-  color: white;
-  padding: 10px;
-  text-align: center;
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; /* Aumente o tamanho da fonte */
+  color: #000000;
+  margin: 0;
+  line-height: 1.5; /* Aumente o espaçamento entre linhas */
+  padding-top: 10px; /* Adicione um espaçamento superior, se necessário */
 }
 
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Estilo da Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  border: 1px solid #000000;
   padding: 20px;
 }
 
-.intro {
+/* Estilo dos Botões */
+.buttons a {
+  margin-right: 10px;
+}
+
+/* Estilo do Header */
+header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 80%;
-  max-width: 1000px;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f7f7f5;
 }
 
-.profile-picture img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+/* Estilo do Menu */
+nav {
+  /* Pode adicionar estilos ao contêiner do nav se necessário */
 }
 
-.intro-text {
-  margin-left: 20px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #005187; /* Mantenha a cor de hover se desejado */
 }
 
 footer {
-  background-color: #005187;
-  color: white;
+  background-color: #f7f7f5;
   text-align: center;
-  padding: 10px;
+  padding: 20px 0;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .intro {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .intro-text {
-    margin-left: 0;
+  .profile-img {
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
   }
 }
 
-.logo {
-  height: 50px; /* Ajuste para a altura que desejar */
-  width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+/* Estilização dos Links Sociais no Footer */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.social-links a i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  color: #0073b1;
+}
+
+.social-links a[href*="github"]:hover {
+  color: #333;
 }

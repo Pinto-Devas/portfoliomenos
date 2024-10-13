@@ -146,7 +146,22 @@ header {
 
 /* Estilo do Menu */
 nav {
-  /* Pode adicionar estilos ao contêiner do nav se necessário */
+  position: fixed; /* Fixa o menu na tela */
+  top: 0; /* Começa fixo no topo */
+  left: 0; /* Alinha o menu à esquerda */
+  width: 100%; /* O menu ocupa toda a largura da página */
+  z-index: 100; /* Mantém o menu acima de outros elementos */
+  display: flex;
+  justify-content: center; /* Centraliza o menu */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05); /* Fundo semitransparente */
+  padding: 10px 40px; /* Espaçamento */
+  border-bottom: 1px solid #e0e0e0; /* Linha inferior suave */
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Altera o fundo ao passar o mouse */
 }
 
 .nav-links {
@@ -218,4 +233,33 @@ footer {
 
 .social-links a[href*="github"]:hover {
   color: #333;
+}
+
+.sobre-mim {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  width: 200px;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.projeto h3 {
+  text-align: center;
+  margin-top: 10px;
 }

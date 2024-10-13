@@ -263,3 +263,50 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
+
+body, html {
+  height: 100%; /* Define a altura total da página */
+  margin: 0; /* Remove margens padrão */
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 90vh; /* Altura da seção */
+}
+
+.container {
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+}
+
+.projetos {
+  display: flex; /* Usa flexbox para organizar as colunas */
+  flex-wrap: wrap; /* Permite que as colunas sejam organizadas em várias linhas se necessário */
+  justify-content: center; /* Centraliza os quadros horizontalmente */
+  width: 80vw; /* Define a largura total como 80% da largura da tela */
+  height: 90%; /* Altura das colunas */
+}
+
+.projeto {
+  width: 40%; /* Cada coluna ocupa 40% da largura total */
+  margin: 1%; /* Adiciona margem entre as colunas */
+  position: relative; /* Para posicionar o título da imagem */
+}
+
+.projeto img {
+  width: 100%; /* Faz a imagem ocupar toda a largura da coluna */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços em branco abaixo da imagem */
+}
+
+h3 {
+  position: absolute; /* Permite que o título fique sobre a imagem */
+  bottom: 10px; /* Distância do fundo da imagem */
+  left: 10px; /* Distância da esquerda da imagem */
+  color: white; /* Cor do texto */
+  background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhorar a legibilidade */
+  padding: 5px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+}

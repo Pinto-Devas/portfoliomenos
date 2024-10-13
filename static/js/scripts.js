@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const interval = setInterval(() => {
         imageIndex = (imageIndex + 1) % images.length;
         quadro.querySelector('img').src = images[imageIndex];
-      }, 1000); // Altera a cada 1 segundo
+      }, 5000); // Altera a cada 5 segundos
 
       quadro.addEventListener('mouseleave', function () {
         clearInterval(interval);

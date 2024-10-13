@@ -1,10 +1,39 @@
 {{ define "main" }}
-<main>
-  <section class="project">
-    <h1 class="project-title">{{ .Title }}</h1>
-    <div class="project-content">
-      <p>{{ .Content }}</p>
+<section class="sobre-mim">
+  <div class="container">
+    <!-- Exibe o título definido no arquivo sobre.md -->
+    <h1>{{ .Title }}</h1>
+    
+    <!-- Exibe o conteúdo definido no arquivo sobre.md -->
+    <div class="content">
+      {{ .Content }}
     </div>
-  </section>
-</main>
+  </div>
+
+  <div class="projetos">
+    <!-- Quadro 1 -->
+    <div class="projeto quadro" data-images='["/images/poli1.jpg", "/images/poli2.png", "/images/poli3.jpg", "/images/poli4.jpg"]'>
+      <img src="/images/poli1.jpg" alt="Escola Politécnica">
+      <h3>Escola Politécnica</h3>
+    </div>
+
+    <!-- Quadro 2 -->
+    <div class="projeto quadro" data-images='["/images/atletica1.jpg", "/images/atletica2.jpg", "/images/atletica3.jpg", "/images/atletica4.jpg"]'>
+      <img src="/images/atletica1.jpg" alt="Atlética">
+      <h3>Atlética</h3>
+    </div>
+
+    <!-- Quadro 3 -->
+    <div class="projeto quadro" data-images='["/images/atletismo1.jpg", "/images/atletismo2.jpg", "/images/atletismo3.jpg", "/images/atletismo4.jpg"]'>
+      <img src="/images/atletismo1.jpg" alt="Atletismo">
+      <h3>Atletismo</h3>
+    </div>
+
+    <!-- Quadro 4 -->
+    <div class="projeto quadro" data-images='["/images/ciencia1.jpg", "/images/ciencia2.jpg", "/images/ciencia3.jpeg", "/images/ciencia4.jpg"]'>
+      <img src="/images/ciencia1.jpg" alt="Iniciação Científica">
+      <h3>Iniciação Científica</h3>
+    </div>
+  </div>
+</section>
 {{ end }}

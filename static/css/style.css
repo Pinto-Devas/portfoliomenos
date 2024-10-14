@@ -114,6 +114,8 @@ h1, h2, h3, p {
   font-size: 20px; /* Aumente o tamanho da fonte */
   color: #000000;
   margin: 0;
+  margin-left: 10px;
+  margin-right: 15px;
   line-height: 1.5; /* Aumente o espaçamento entre linhas */
   padding-top: 10px; /* Adicione um espaçamento superior, se necessário */
 }
@@ -240,57 +242,54 @@ footer {
 /* Estilos específicos para a página Sobre */
 .specific-sobre {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  align-items: flex-start; /* Alinha o conteúdo pelo topo */
+  justify-content: space-between; /* Distribui o texto e imagens lado a lado */
+  height: auto;
+  padding: 50px 20px;
   min-height: calc(90vh - 70px); /* Altura mínima considerando o header */
 }
 
 .specific-sobre .sobre-mim {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.specific-sobre .container {
-  width: 100%;
+  flex: 1; /* O texto ocupa o maior espaço possível */
+  padding-right: 20px; /* Espaçamento entre o texto e as imagens */
+  text-align: left;
 }
 
 .specific-sobre .projetos {
-  display: flex; /* Usa flexbox para organizar as colunas */
-  flex-wrap: wrap; /* Permite que as colunas sejam organizadas em várias linhas se necessário */
-  justify-content: center; /* Centraliza os quadros horizontalmente */
-  width: 80vw; /* Define a largura total como 80% da largura da tela */
-  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  flex: 1; /* As imagens ocupam o espaço restante */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .specific-sobre .projeto {
-  width: 40%; /* Cada coluna ocupa 40% da largura total */
-  margin: 1%; /* Adiciona margem entre as colunas */
-  position: relative; /* Para posicionar o título da imagem */
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .specific-sobre .projeto img {
-  width: 100%; /* Faz a imagem ocupar toda a largura da coluna */
-  height: 650px; /* Defina a altura fixa desejada, ajuste conforme necessário */
-  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
-  border-radius: 10px; /* Bordas arredondadas para as imagens dos projetos */
+  width: 435px;
+  height: 435px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .specific-sobre .projeto h3 {
-  position: absolute; /* Permite que o título fique sobre a imagem */
-  bottom: 10px; /* Distância do fundo da imagem */
-  left: 10px; /* Distância da esquerda da imagem */
-  color: white; /* Cor do texto */
-  background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhorar a legibilidade */
-  padding: 5px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-family: 'Montserrat', sans-serif; /* Usa a fonte Montserrat */
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sobre-mim h1 {
-  font-family: 'Grotsek', sans-serif; /* Usa a mesma fonte */
-  font-size: 48px; /* Usa o mesmo tamanho de fonte */
-  margin: 0; /* Remove margens para uniformidade */
-  color: #000000; /* Cor do texto */
-  margin-top: 40px; /* Ajuste a margem para o espaço do header */
+  font-family: 'Grotsek', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  color: #000000;
+  margin-top: 40px;
 }

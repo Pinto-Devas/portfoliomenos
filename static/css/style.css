@@ -446,3 +446,24 @@ footer {
   margin-top: 20px;
   margin-right: 20px;
 }
+
+.ring {
+  position: absolute;
+  top: 10px; /* Distância do topo da imagem */
+  right: 10px; /* Distância da direita da imagem */
+  display: none; /* Oculta o anel inicialmente */
+  z-index: 1; /* Coloca o anel acima da imagem */
+}
+
+.load {
+  animation: load 1.5s linear forwards; /* Animação de carregamento */
+}
+
+@keyframes load {
+  from {
+    stroke-dasharray: 0, 56.5; /* Começa vazio (0) */
+  }
+  to {
+    stroke-dasharray: 56.5, 0; /* Completa a volta */
+  }
+}

@@ -363,11 +363,31 @@ footer {
   text-align: center;
 
   font-family: 'Grotsek', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #333;
 }
 
 .contact-page img {
   margin-top: 20px;
   cursor: pointer;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.email-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.email-link i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.email-link:hover {
+  color: #d44638; /* Cor característica do Gmail */
 }

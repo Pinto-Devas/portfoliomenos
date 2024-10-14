@@ -293,3 +293,58 @@ footer {
   color: #000000;
   margin-top: 40px;
 }
+
+.projects-list h2 {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  color: #000000;
+  margin-top: 40px;
+  padding: 50px 20px;
+}
+
+.projects-list .grid-item {
+  border: none; /* Remove o grid (bordas ao redor do projeto) */
+  margin-bottom: 40px; /* Espaçamento entre projetos */
+}
+
+.projects-list .grid-item h3 {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.projects-list .grid-item p {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 15px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.project-button {
+  display: inline-block;
+  font-family: 'Grotsek', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo meio transparente e mais claro */
+  padding: 15px 15px; /* Botão quadrado */
+  border-radius: 12px; /* Bordas arredondadas */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.project-button:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo mais escuro ao passar o mouse */
+}

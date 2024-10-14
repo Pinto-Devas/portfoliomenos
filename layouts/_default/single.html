@@ -1,4 +1,14 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
+  <div class="project-container">
+    <div class="project-image">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+    </div>
+    <div class="project-description">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Content }}</p>
+      <a href="{{ .Params.github }}" class="github-link" target="_blank">
+        <i class="fab fa-github"></i> Veja no GitHub
+      </a>
+    </div>
+  </div>
 {{ end }}

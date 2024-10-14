@@ -318,7 +318,7 @@ footer {
 }
 
 .projects-list .grid-item p {
-  font-family: 'Grotsek', sans-serif;
+  font-family: 'Montserrat';
   font-size: 18px;
   margin: 0;
   color: #000000;
@@ -334,7 +334,7 @@ footer {
 
 .project-button {
   display: inline-block;
-  font-family: 'Grotsek', sans-serif;
+  font-family: 'Montserrat';
   font-size: 16px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.4); /* Fundo meio transparente e mais claro */
@@ -362,7 +362,7 @@ footer {
 .contact-page {
   text-align: center;
 
-  font-family: 'Grotsek', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #333;
 }
@@ -390,4 +390,59 @@ footer {
 
 .email-link:hover {
   color: #d44638; /* Cor característica do Gmail */
+}
+
+.project-container {
+  display: flex; /* Para alinhar a imagem e a descrição lado a lado */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  margin-top: 80px; /* Distância do header */
+}
+
+.project-image {
+  flex: 1; /* Para ocupar 50% do espaço */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  border-radius: 15px;
+}
+
+.project-image img {
+  width: 100%; /* A imagem ocupa 100% da largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 15px;
+}
+
+.project-description {
+  flex: 1; /* Para ocupar o restante do espaço */
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.github-link i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.github-link:hover {
+  color: #333333;
+}
+
+.project-container h2 {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: #000000;
+}
+
+.project-container p {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  margin: 0;
+  color: #000000;
+  margin-top: 20px;
+  margin-right: 20px;
 }

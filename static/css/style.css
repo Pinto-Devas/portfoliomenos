@@ -348,3 +348,26 @@ footer {
 .project-button:hover {
   background-color: rgba(0, 0, 0, 0.6); /* Fundo mais escuro ao passar o mouse */
 }
+
+.contact-page h1 {
+  font-family: 'Grotsek', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  color: #000000;
+  margin-top: 40px;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.contact-page {
+  text-align: center;
+
+  font-family: 'Grotsek', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-page img {
+  margin-top: 20px;
+  cursor: pointer;
+}
